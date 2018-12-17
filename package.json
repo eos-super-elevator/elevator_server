@@ -1,0 +1,28 @@
+{
+  "name": "elevator_server",
+  "version": "1.0.0",
+  "description": "An express JS web server to controlate Raspberry PI",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eos-super-elevator/elevator_server.git"
+  },
+  "keywords": [
+    "expressjs",
+    "rpi",
+    "iot"
+  ],
+  "author": "Alexandre Rousseau <contact@rousseau-alexandre.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eos-super-elevator/elevator_server/issues"
+  },
+  "homepage": "https://github.com/eos-super-elevator/elevator_server#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

@@ -2,9 +2,7 @@ const express = require('express')
 const app = express()
 const Gpio = require('onoff').Gpio //include onoff to interact with the GPIO
 
-app.get('/', function (req, res) {
-
-
+function makeLEDBlink(duration = 5000, interval = 250) {
   let LED = new Gpio(4, 'out') //use GPIO pin 4, and specify that it is output
   let blinkInterval = setInterval(blinkLED, 250) //run the blinkLED function every 250ms
 
@@ -22,11 +20,16 @@ app.get('/', function (req, res) {
     LED.unexport() // Unexport GPIO to free resources
   }
 
-  setTimeout(endBlink, 5000); //stop blinking after 5 seconds
+  setTimeout(endBlink, duration); //stop blinking after 5 seconds
+}
+
+app.get('/', function(req, res) {
+
+  makeLEDBlink()
 
   res.send('Hello World!')
 })
 
-app.listen(3000, function () {
+app.listen(3000, function() {
   console.log('Example app listening on port 3000!')
 })

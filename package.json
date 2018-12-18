@@ -24,6 +24,7 @@
   "homepage": "https://github.com/eos-super-elevator/elevator_server#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "lcd": "^2.0.4",
     "onoff": "^3.2.2"
   }
 }

@@ -1,0 +1,21 @@
+{
+  "height": 10,
+  "floors": [
+    {
+      "id": 1,
+      "access": false
+    },
+    {
+      "id": 2,
+      "access": false
+    },
+    {
+      "id": 3,
+      "access": false
+    },
+    {
+      "id": 4,
+      "access": false
+    }
+  ]
+}
